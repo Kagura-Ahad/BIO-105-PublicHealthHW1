@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.3)  3 SEP 2024 02:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.3)  4 SEP 2024 00:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -582,7 +582,12 @@ Overfull \hbox (58.94661pt too wide) detected at line 122
 m/it/10 :[]\OT1/cmr/m/n/10 %
  []
 
-[2] [3] [4]
+[2] [3]
+Overfull \hbox (1.48543pt too wide) detected at line 206
+[] \OT1/cmr/m/n/10 = [] = [] = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0213[]
+ []
+
+[4] [5] [6]
 This exam contains 10 questions with 5 parts, 0 subparts, and 0 subsubparts.
 (Manual.aux)
  ***********
@@ -593,22 +598,22 @@ Package rerunfilecheck Info: File `Manual.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13424 strings out of 474485
- 202770 string characters out of 5753553
+ 13438 strings out of 474485
+ 202954 string characters out of 5753553
  1941542 words of memory out of 5000000
- 35515 multiletter control sequences out of 15000+600000
+ 35521 multiletter control sequences out of 15000+600000
  565020 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,93p,1161b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,1161b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb>
-Output written on Manual.pdf (4 pages, 98870 bytes).
+Output written on Manual.pdf (6 pages, 105120 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
