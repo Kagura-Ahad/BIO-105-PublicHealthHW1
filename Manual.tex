@@ -1,0 +1,201 @@
+\documentclass[a4paper]{exam}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{listings}
+\usepackage{xcolor} % Optional, for color
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{titling} % Required for the subtitle command
+\usepackage{pythonhighlight}
+\usepackage{graphicx}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray}, % Adjust font size and color
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left, % Line numbers on the left
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    firstnumber=1 % Start line numbers at 1
+}
+
+
+\lstset{style=mystyle}
+
+
+\setlength{\droptitle}{-1in} % Adjust this value to decrease the spacing above the title
+
+\title{BIO-105: Introduction to Public Health\\
+Assignment 1}
+
+\author{Syed Ahad Ali\\ sa07753}
+\date{\today}
+
+\printanswers % This command enables the display of answers
+
+
+\begin{document}
+
+\maketitle
+% \vspace{-3cm} % Adjust this value to decrease the spacing below the title
+
+\begin{center}
+    \textbf{Fall 2024}\\
+    \textbf{Habib University}\\
+    \textbf{Dhanani School of Science \& Engineering}
+\end{center}
+
+% \vspace{1cm} % Adjust this value to decrease the spacing below the title
+
+\begin{questions}
+
+    \question[10]
+    A public health program in Lahore seeks to identify children who have asthma symptoms through a questionnaire called the Lahore Pediatric Asthma Screening Tool (LPAST). This questionnaire is sent to all the parents of children attending public schools in Lahore. Children who show symptoms of asthma, but who have not yet been diagnosed with the condition, are referred to the Mobile Asthma Care Unit for further evaluation by a physician, if the parent consents. The validity of the LPAST was evaluated in 100 children without a prior diagnosis of asthma. A medical assessment by a specialist in asthma at a local hospital was considered the "gold standard" for detecting the presence of asthma in these children. A positive result on the LPAST was defined as the presence of two or more symptoms in the past 12 months (such as wheezing, dry cough at night, or wheezing or cough during physical activity) or a medical visit for wheezing in the past 12 months. What is the prevalence of asthma in this group of children? (Results of the LPAST and the medical assessments are shown below.)
+    \begin{table}[H]
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{LPAST Screen}       & \textbf{Possible Asthma} & \textbf{No Asthma} & \textbf{Total} \\ \hline
+        \textbf{Medical Assessment} &                 &           &       \\ \hline
+        Asthma             & 30              & 20        & 50    \\ \hline
+        No Asthma          & 10              & 40        & 50    \\ \hline
+        Total              & 40              & 60        & 100   \\ \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{solution}
+        The prevalence of asthma is calculated by dividing the number of children diagnosed with asthma by the total number of children. The total number of children assessed is given as 100 and the total number of children who were diagnosed with asthma by the medical assessment (considered the "gold standard") is 50 children.
+        \begin{equation*}
+            \text{Prevalence of Asthma} = \frac{50}{100} = 0.5 = 50\%
+        \end{equation*}
+    \end{solution}
+
+
+    \question[10]
+    A total of 3000 workers at a particular industry were asked whether they had a history of hypertension or not at the beginning of their employment. Of the 3000, 60\% were males, 40\% were 40-50 years of age and 60\% were above the age of 50 years. Of the 3000 workers, 600 reported a history of hypertension. Of the 600 cases of hypertension, 30\% were males and 70\% were above 50 years of age.\\ Calculate the following:
+    \begin{parts}
+        \part Prevalence of hypertension in the sample of workers?
+        \part Prevalence of hypertension in male workers?
+        \part Prevalence of hypertension in female workers?
+        \part Prevalence of hypertension in workers aged 40-50 years?
+        \part Prevalence of hypertension in workers aged above 50 years?
+
+    \end{parts}    
+    \begin{solution}
+        \begin{parts}
+            \part The prevalence of hypertension of the entire sample can be calculated by dividing the number of workers with hypertension by the total number of workers. The total number of workers is given as 3000 and the total number of workers with hypertension is given as 600.
+            \begin{equation*}
+                \text{Prevalence of Hypertension in the total sample} = \frac{600}{3000} = 0.2 = 20\%
+            \end{equation*}
+            \part The prevalence of hypertension in male workers can be calculated by dividing the number of males with hypertension by the total number of males in the sample.
+            \begin{equation*}
+                \text{Prevalence of Hypertension in male workers} = \frac{0.3 \times 600}{0.6 \times 3000} = 0.1 = 10\%
+            \end{equation*}
+            \part The prevalence of hypertension in female workers can be calculated by dividing the number of females with hypertension by the total number of females in the sample.
+            \begin{equation*}
+                \text{Prevalence of Hypertension in female workers} = \frac{(1 - 0.3) \times 600}{(1 - 0.6) \times 3000} = 0.35 = 35\%
+            \end{equation*}
+            \part The prevalence of hypertension workers aged 40-50 years can be calculated by dividing the number of workers aged 40-50 years with hypertension by the total number of workers aged 40-50 years in the sample.
+            \begin{equation*}
+                \text{Prevalence of Hypertension in workers aged 40-50 years} = \frac{(1 - 0.7) \times 600}{0.4 \times 3000} = 0.15 = 15\%
+            \end{equation*}
+            \part The prevalence of hypertension workers aged above 50 years can be calculated by dividing the number of workers aged above 50 years with hypertension by the total number of workers aged above 50 years in the sample.
+            \begin{equation*}
+                \text{Prevalence of Hypertension in workers aged above 50 years} = \frac{0.7 \times 600}{(1 - 0.4) \times 3000} = 0.23\overline{3} = 23.\overline{3}\%
+            \end{equation*}
+        \end{parts}
+        
+    \end{solution}
+
+    \question[10]
+    Between January 1, 2004, and December 31, 2006, all 3000 workers at a manufacturing plant had periodic health evaluations that included blood pressure assessments. It was determined that all individuals who were already on medication for hypertension were correctly diagnosed. During this three-year period, a total of 720 workers were identified as having hypertension. Among these 720 hypertensive workers, 302 were male. The workforce consisted of 1800 males and 1200 females. What is the period prevalence of hypertension among males during this three-year period?
+
+    \begin{solution}
+        The period prevalence of hypertension among male workers can be calculated by dividing the sum of number male workers with predetermined hypertension and the number new cases of hypertension within male workers with the total number of male workers in the sample.
+        Since all individuals who were already on medication for hypertension were correctly diagnosed, the sum of number male workers with predetermined hypertension and the number new cases of hypertension within male workers is equal to the numberof male workers diagnosed with hypertension in the time period in question.
+        \begin{equation*}
+            \text{Period Prevalence of Hypertension in male workers} = \frac{302}{1800} = 0.16\overline{7} = 16.\overline{7}\%
+        \end{equation*}
+    \end{solution}
+
+    \question[10]
+    The average annual incidence of a particular type of pancreatic cancer during 1996 was 6.7 cases per 100,000 and the average annual prevalence was 5.1 cases per 100,000. Based on this information what was the average duration (in years) of this cancer type?
+
+    \begin{solution}
+        To find the duration of the cancer type, we can use the relationship between incidence, prevalence, and duration which is given by the formula:
+        \begin{equation*}
+            \text{Prevalence} = \text{Incidence} \times \text{Duration}
+        \end{equation*}
+        The average annual incidence of the cancer type is given as 6.7 cases per 100,000 and the average annual prevalence is given as 5.1 cases per 100,000. Substituting these values into the formula, we get:
+        \begin{equation*}
+            5.1 = 6.7 \times \text{Duration}
+        \end{equation*}
+        Solving for the duration, we get:
+        \begin{equation*}
+            \text{Duration} = \frac{5.1}{6.7} = 0.761194 \approx 0.76 \text{ years}
+        \end{equation*}
+        So, the average duration of this cancer type is approximately 0.76 years (or about 9 months).
+    \end{solution}
+
+    \question[10]
+    You identify a group of 2,000 males age 40-59 years and follow them of the occurrence of heart problems. At the start of the follow-up period, 400 had initial serum cholesterol levels of less than 220 mg\%, 900 had levels of 220-270 mg\% and 700 had levels greater than 270 mg\%. Among these three cholesterol classes: (1) less than 220; (2) 220-270; and (3) greater than 270, the number of new cases of coronary heart disease during the first year of follow-up were 3, 12, and 14 respectively. What was the incidence rate of coronary heart disease within each of the three cholesterol classes? (Assume no one was lost-to-follow during this time.)
+
+    \begin{solution}
+        
+    \end{solution}
+
+    \question[10]
+    In a study of 8,000 women who were 40-59 years of age, 175 new cases of disease X were diagnosed between January 1980 and December 1982. What was the incidence rate of disease X among the 40-59 year old women during that time interval?
+
+    \begin{solution}
+        
+    \end{solution}
+
+    \question[10]
+    In a certain health district, a group of 750 school children who lacked antibody to measles were followed for 3 years for infection with measles. At the end of 18 months of follow-up, 24 children had acquired antibody to measles. What was the person-time incidence rate (density) for measles infection in this population of children at the midpoint of the study?
+
+    \begin{solution}
+        
+    \end{solution}
+
+    \question[10]
+    Examination of a 10\% random sample drawn from a total of 80,000 civil servants revealed 820 persons with clinical evidence of coronary heart disease. What is the point prevalence of coronary heart disease (CHD) in the sample population?
+
+    \begin{solution}
+        
+    \end{solution}
+
+    \question[10]
+    Would the 820 people in the previous question be included in a follow-up study assessing the incidence of coronary heart disease? Explain your answer
+
+    \begin{solution}
+        
+    \end{solution}
+
+    \question[10]
+    Describe the role of social determinants of health in shaping population health outcomes. Choose one social determinant and explain how it can lead to health disparities in a specific population.
+    \begin{solution}
+        
+    \end{solution}
+
+\end{questions}
+
+
+\end{document}
